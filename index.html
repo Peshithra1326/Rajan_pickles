@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heritage Fish Pickles - Traditional Artisanal Delicacies</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#8B4513',secondary:'#D2691E'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body {
+font-family: 'Lora', serif;
+background-color: #FDF8F3;
+}
+.wood-texture {
+background-image: url('https://readdy.ai/api/search-image?query=close-up%2520texture%2520of%2520natural%2520wood%2520grain%2520with%2520warm%2520brown%2520tones%252C%2520rustic%2520appearance%252C%2520natural%2520organic%2520pattern%252C%2520horizontal%2520grain%2520lines%252C%2520smooth%2520surface%252C%2520high%2520resolution%252C%2520subtle%2520texture&width=1200&height=200&seq=wood123&orientation=landscape');
+background-size: cover;
+}
+.parchment {
+background-color: #F5EFE0;
+background-image: url('https://readdy.ai/api/search-image?query=old%2520parchment%2520paper%2520texture%252C%2520slightly%2520yellowed%252C%2520subtle%2520wrinkles%2520and%2520stains%252C%2520vintage%2520appearance%252C%2520warm%2520beige%2520color%252C%2520high%2520resolution%252C%2520natural%2520paper%2520grain%252C%2520antique%2520document%2520background&width=1200&height=800&seq=parch123&orientation=landscape');
+background-size: cover;
+background-blend-mode: overlay;
+}
+.handwritten {
+font-family: 'Playfair Display', serif;
+}
+.hero-section {
+background-image: url('https://readdy.ai/api/search-image?query=traditional%2520artisanal%2520fish%2520pickle%2520in%2520rustic%2520glass%2520jars%2520arranged%2520on%2520wooden%2520table%2520with%2520fresh%2520herbs%2520and%2520spices%2520scattered%2520around%252C%2520warm%2520natural%2520lighting%2520coming%2520from%2520the%2520left%252C%2520vintage%2520kitchen%2520setting%252C%2520soft%2520focus%2520background%2520with%2520traditional%2520cooking%2520utensils%252C%2520earthy%2520tones%2520of%2520amber%2520and%2520terracotta&width=1920&height=800&seq=hero123&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+.product-card {
+transition: transform 0.3s ease;
+}
+.product-card:hover {
+transform: translateY(-5px);
+}
+.price-tag {
+transform: rotate(-5deg);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+.scroll-container {
+background-image: url('https://readdy.ai/api/search-image?query=vintage%2520scroll%2520paper%2520with%2520slightly%2520curled%2520edges%252C%2520cream%2520colored%2520parchment%252C%2520subtle%2520aged%2520texture%252C%2520old%2520document%2520appearance%252C%2520warm%2520beige%2520tones%252C%2520high%2520resolution%252C%2520isolated%2520on%2520transparent%2520background&width=600&height=300&seq=scroll123&orientation=landscape');
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+.timeline-item::before {
+content: "";
+position: absolute;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: #8B4513;
+left: -10px;
+top: 0;
+}
+</style>
+</head>
+<body>
+<!-- Header with Navigation -->
+<header class="w-full">
+<div class="wood-texture text-white py-4">
+<div class="container mx-auto px-4 flex justify-between items-center">
+<h1 class="font-['Pacifico'] text-3xl">Rajan Pickles</h1>
+<nav class="hidden md:flex space-x-6">
+<a href="#" class="hover:text-yellow-200 transition">Home</a>
+<a href="#" class="hover:text-yellow-200 transition">Our Story</a>
+<a href="#" class="hover:text-yellow-200 transition">Products</a>
+<a href="#" class="hover:text-yellow-200 transition">Recipes</a>
+<a href="#" class="hover:text-yellow-200 transition">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<div class="relative">
+<input type="text" placeholder="Search..." class="py-1 px-3 pr-8 rounded-button bg-[#F5EFE0] text-gray-800 border-none focus:outline-none focus:ring-2 focus:ring-primary">
+<div class="absolute right-2 top-1/2 transform -translate-y-1/2 w-5 h-5 flex items-center justify-center">
+<i class="ri-search-line text-gray-600"></i>
+</div>
+</div>
+<div class="w-8 h-8 flex items-center justify-center relative">
+<i class="ri-shopping-basket-2-line text-xl"></i>
+<span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">3</span>
+</div>
+</div>
+<div class="md:hidden w-8 h-8 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero-section w-full relative">
+<div class="absolute inset-0 bg-black bg-opacity-40"></div>
+<div class="container mx-auto px-4 py-32 relative z-10">
+<div class="max-w-2xl">
+<h2 class="handwritten text-5xl md:text-6xl font-bold text-white mb-6">Centuries of Tradition in Every Jar</h2>
+<p class="text-xl text-white mb-8">Our fish pickles are crafted using time-honored recipes passed down through generations, capturing the authentic flavors of coastal heritage.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary hover:bg-opacity-90 text-white px-8 py-3 rounded-button font-medium whitespace-nowrap">Shop Collection</button>
+<button class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-button font-medium hover:bg-white hover:bg-opacity-10 whitespace-nowrap">Our Story</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="handwritten text-4xl font-bold text-gray-800 mb-3">Our Traditional Pickles</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Each variety is carefully prepared using age-old techniques and the freshest ingredients from local fishermen.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Product 1 -->
+<div class="product-card bg-[#F5EFE0] rounded shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="./images/pickle1.jpg" alt="Spicy Mackerel Pickle" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-5 right-4 bg-yellow-100 px-4 py-2 rounded-lg shadow-sm price-tag">
+<span class="handwritten text-xl font-bold text-primary">$12.95</span>
+</div>
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-2">Spicy Mackerel Pickle</h3>
+<p class="text-gray-600 mb-4">A bold, fiery pickle made with fresh mackerel, red chilies, and our secret blend of 12 spices. Perfect with rice or bread.</p>
+<div class="flex justify-between items-center">
+<div class="flex items-center">
+<button class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-l-button">
+<i class="ri-subtract-line"></i>
+</button>
+<input type="number" value="1" min="1" class="w-10 h-8 text-center border-none bg-gray-200">
+<button class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-r-button">
+<i class="ri-add-line"></i>
+</button>
+</div>
+<button class="bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-button whitespace-nowrap">Add to Basket</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="product-card bg-[#F5EFE0] rounded shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=appetizing%2520sardine%2520pickle%2520with%2520whole%2520sardine%2520pieces%2520arranged%2520artfully%252C%2520swimming%2520in%2520golden%2520mustard%2520oil%252C%2520garnished%2520with%2520fresh%2520curry%2520leaves%2520and%2520whole%2520spices%252C%2520served%2520on%2520banana%2520leaf%252C%2520fish%2520pieces%2520looking%2520succulent%2520and%2520well-preserved%252C%2520authentic%2520traditional%2520presentation%252C%2520dramatic%2520food%2520photography%2520with%2520rich%2520colors&width=600&height=400&seq=prod2new&orientation=landscape" alt="Tangy Sardine Pickle" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-5 right-4 bg-yellow-100 px-4 py-2 rounded-lg shadow-sm price-tag">
+<span class="handwritten text-xl font-bold text-primary">$10.95</span>
+</div>
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-2">Tangy Sardine Pickle</h3>
+<p class="text-gray-600 mb-4">Fresh sardines preserved in a tangy tamarind base with curry leaves and mustard. A coastal favorite for generations.</p>
+<div class="flex justify-between items-center">
+<div class="flex items-center">
+<button class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-l-button">
+<i class="ri-subtract-line"></i>
+</button>
+<input type="number" value="1" min="1" class="w-10 h-8 text-center border-none bg-gray-200">
+<button class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-r-button">
+<i class="ri-add-line"></i>
+</button>
+</div>
+<button class="bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-button whitespace-nowrap">Add to Basket</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="product-card bg-[#F5EFE0] rounded shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="./images/prawn.jpg" alt="Ginger Prawn Pickle" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6 relative">
+<div class="absolute -top-5 right-4 bg-yellow-100 px-4 py-2 rounded-lg shadow-sm price-tag">
+<span class="handwritten text-xl font-bold text-primary">$14.95</span>
+</div>
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-2">Ginger Prawn Pickle</h3>
+<p class="text-gray-600 mb-4">Succulent prawns in a ginger-garlic infused oil with a hint of caramelized onions. A delicacy from coastal kitchens.</p>
+<div class="flex justify-between items-center">
+<div class="flex items-center">
+<button class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-l-button">
+<i class="ri-subtract-line"></i>
+</button>
+<input type="number" value="1" min="1" class="w-10 h-8 text-center border-none bg-gray-200">
+<button class="w-8 h-8 flex items-center justify-center bg-gray-200 rounded-r-button">
+<i class="ri-add-line"></i>
+</button>
+</div>
+<button class="bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-button whitespace-nowrap">Add to Basket</button>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12">
+<button class="border-2 border-primary text-primary hover:bg-primary hover:text-white transition px-8 py-3 rounded-button font-medium whitespace-nowrap">View All Varieties</button>
+</div>
+</div>
+</section>
+<!-- Our Heritage Section -->
+<section class="py-16 parchment">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=vintage%2520black%2520and%2520white%2520photograph%2520of%2520elderly%2520fisherman%2520and%2520his%2520wife%2520preparing%2520traditional%2520fish%2520pickle%2520in%2520coastal%2520kitchen%252C%25201950s%2520era%252C%2520authentic%2520old%2520photograph%2520style%252C%2520slightly%2520faded%2520edges%252C%2520showing%2520traditional%2520methods%2520and%2520tools%252C%2520nostalgic%2520family%2520heritage%2520scene&width=600&height=500&seq=heritage1&orientation=portrait" alt="Our Heritage" class="rounded-lg shadow-lg w-full">
+</div>
+<div class="md:w-1/2">
+<h2 class="handwritten text-4xl font-bold text-gray-800 mb-6">Our Family Heritage</h2>
+<p class="text-gray-700 mb-4">The story of our fish pickles began in 1897 on the coastal shores of the Indian Ocean. My great-grandfather, Nathaniel Fernandes, was a fisherman who developed a unique preservation technique combining local spices with the day's catch.</p>
+<p class="text-gray-700 mb-4">For five generations, our family has guarded these recipes, passing down not just ingredients but the philosophy that good food takes time. Each batch of our pickles is still made by hand, aged in traditional clay pots, and bottled only when the flavors have perfectly matured.</p>
+<p class="text-gray-700 mb-8">Today, we continue this legacy, bringing these authentic flavors from our family kitchen to your table, unchanged by time or technology.</p>
+<button class="bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-button whitespace-nowrap">Read Our Full Story</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Traditional Process -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="handwritten text-4xl font-bold text-gray-800 mb-3">The Traditional Process</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Our pickles are crafted using methods unchanged for over a century, preserving both flavor and heritage.</p>
+</div>
+<div class="relative">
+<div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-primary hidden md:block"></div>
+<div class="space-y-16 relative">
+<!-- Step 1 -->
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2 md:text-right relative">
+<div class="timeline-item md:pr-12">
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-3">Fresh Catch Selection</h3>
+<p class="text-gray-600">Each morning, we select the freshest catch from local fishermen who use traditional sustainable fishing methods. Only the finest fish make it to our pickling process.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=fresh%2520fish%2520selection%2520at%2520traditional%2520coastal%2520market%252C%2520fisherman%2520displaying%2520variety%2520of%2520fresh%2520catch%2520on%2520ice%252C%2520early%2520morning%2520light%252C%2520authentic%2520fishing%2520village%2520scene%252C%2520rustic%2520wooden%2520stalls%252C%2520selective%2520hand%2520picking%2520quality%2520fish%252C%2520natural%2520documentary%2520style%2520photography&width=500&height=350&seq=process1&orientation=landscape" alt="Fresh Catch Selection" class="rounded-lg shadow-md w-full">
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-8">
+<div class="md:w-1/2 md:text-left relative">
+<div class="timeline-item md:pl-12">
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-3">Spice Grinding</h3>
+<p class="text-gray-600">Our spices are hand-selected, sun-dried, and ground in small batches using traditional stone grinders to release their essential oils and flavors.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=traditional%2520spice%2520grinding%2520using%2520stone%2520mortar%2520and%2520pestle%252C%2520various%2520colorful%2520whole%2520spices%2520scattered%2520around%252C%2520elderly%2520hands%2520working%2520with%2520precision%252C%2520warm%2520natural%2520lighting%252C%2520rustic%2520wooden%2520table%252C%2520authentic%2520traditional%2520food%2520preparation%252C%2520documentary%2520style%2520photography&width=500&height=350&seq=process2&orientation=landscape" alt="Spice Grinding" class="rounded-lg shadow-md w-full">
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col md:flex-row items-center gap-8">
+<div class="md:w-1/2 md:text-right relative">
+<div class="timeline-item md:pr-12">
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-3">Slow Marination</h3>
+<p class="text-gray-600">The prepared fish and spices are combined with our special vinegar blend and allowed to marinate for several days, allowing the flavors to meld perfectly.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=traditional%2520fish%2520marination%2520process%2520in%2520large%2520clay%2520pots%252C%2520fish%2520pieces%2520visible%2520with%2520vibrant%2520spices%2520and%2520oil%252C%2520wooden%2520spoon%2520resting%2520on%2520pot%2520edge%252C%2520rustic%2520kitchen%2520setting%252C%2520warm%2520natural%2520lighting%252C%2520authentic%2520traditional%2520food%2520preparation%252C%2520documentary%2520style%2520photography&width=500&height=350&seq=process3&orientation=landscape" alt="Slow Marination" class="rounded-lg shadow-md w-full">
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col md:flex-row-reverse items-center gap-8">
+<div class="md:w-1/2 md:text-left relative">
+<div class="timeline-item md:pl-12">
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-3">Aging Process</h3>
+<p class="text-gray-600">Our pickles are aged in traditional clay pots for a minimum of three months, allowing the flavors to develop their characteristic depth and complexity.</p>
+</div>
+</div>
+<div class="md:w-1/2">
+<img src="https://readdy.ai/api/search-image?query=traditional%2520clay%2520pots%2520with%2520fish%2520pickle%2520aging%2520in%2520cool%2520dark%2520cellar%252C%2520multiple%2520terracotta%2520containers%2520with%2520sealed%2520tops%252C%2520some%2520with%2520date%2520labels%252C%2520dusty%2520authentic%2520storage%2520area%252C%2520dim%2520natural%2520lighting%252C%2520rustic%2520wooden%2520shelves%252C%2520documentary%2520style%2520photography&width=500&height=350&seq=process4&orientation=landscape" alt="Aging Process" class="rounded-lg shadow-md w-full">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-16 bg-[#F5EFE0]">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="handwritten text-4xl font-bold text-gray-800 mb-3">What Our Customers Say</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Discover why families across the world have made our pickles part of their dining tradition.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Testimonial 1 -->
+<div class="scroll-container p-8">
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+</div>
+<p class="italic text-gray-700 mb-4">"I've been ordering these pickles for over 15 years now. The Mackerel pickle reminds me of my grandmother's kitchen in Kerala. Nothing compares to this authentic taste."</p>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+<i class="ri-user-line text-gray-600"></i>
+</div>
+<div>
+<p class="font-bold text-gray-800">Priya Nair</p>
+<p class="text-sm text-gray-600">London, UK</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="scroll-container p-8">
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+</div>
+<p class="italic text-gray-700 mb-4">"As a chef, I'm always looking for authentic ingredients. These fish pickles have become a secret weapon in my restaurant. The depth of flavor is unmatched by any commercial product."</p>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+<i class="ri-user-line text-gray-600"></i>
+</div>
+<div>
+<p class="font-bold text-gray-800">Michael Rodriguez</p>
+<p class="text-sm text-gray-600">San Francisco, USA</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="scroll-container p-8">
+<div class="flex flex-col h-full justify-between">
+<div>
+<div class="flex mb-4">
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-fill text-yellow-500"></i>
+<i class="ri-star-half-fill text-yellow-500"></i>
+</div>
+<p class="italic text-gray-700 mb-4">"I discovered these pickles at a food festival and immediately ordered a set. The Prawn pickle is absolutely divine with steamed rice. The packaging is beautiful too - perfect for gifting."</p>
+</div>
+<div class="flex items-center">
+<div class="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center mr-3">
+<i class="ri-user-line text-gray-600"></i>
+</div>
+<div>
+<p class="font-bold text-gray-800">Amelia Thompson</p>
+<p class="text-sm text-gray-600">Melbourne, Australia</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Ingredients Spotlight -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="handwritten text-4xl font-bold text-gray-800 mb-3">Ingredients Spotlight</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">We source only the finest ingredients, many of which are still harvested using traditional methods.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Ingredient 1 -->
+<div class="text-center">
+<div class="mb-4 mx-auto w-40 h-40 rounded-full overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=fresh%2520mackerel%2520fish%2520on%2520ice%252C%2520silver%2520skin%2520glistening%252C%2520close-up%2520detailed%2520view%252C%2520high-quality%2520fresh%2520seafood%252C%2520natural%2520lighting%252C%2520market%2520display%252C%2520food%2520photography%2520with%2520natural%2520colors&width=300&height=300&seq=ing1&orientation=squarish" alt="Fresh Fish" class="w-full h-full object-cover">
+</div>
+<h3 class="handwritten text-xl font-bold text-gray-800 mb-2">Fresh Catch</h3>
+<p class="text-gray-600">Sustainably caught by local fishermen using traditional methods, ensuring the highest quality and flavor.</p>
+</div>
+<!-- Ingredient 2 -->
+<div class="text-center">
+<div class="mb-4 mx-auto w-40 h-40 rounded-full overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=whole%2520and%2520ground%2520red%2520chilies%252C%2520vibrant%2520color%252C%2520close-up%2520detailed%2520view%252C%2520some%2520scattered%2520on%2520wooden%2520surface%252C%2520natural%2520lighting%252C%2520spice%2520ingredient%2520display%252C%2520food%2520photography%2520with%2520rich%2520colors&width=300&height=300&seq=ing2&orientation=squarish" alt="Red Chilies" class="w-full h-full object-cover">
+</div>
+<h3 class="handwritten text-xl font-bold text-gray-800 mb-2">Heirloom Chilies</h3>
+<p class="text-gray-600">Grown in our partner farms using heritage seeds, these chilies provide the perfect balance of heat and flavor.</p>
+</div>
+<!-- Ingredient 3 -->
+<div class="text-center">
+<div class="mb-4 mx-auto w-40 h-40 rounded-full overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=assorted%2520whole%2520spices%2520including%2520mustard%2520seeds%252C%2520fenugreek%252C%2520cumin%252C%2520and%2520coriander%252C%2520close-up%2520detailed%2520view%252C%2520arranged%2520artistically%2520on%2520wooden%2520surface%252C%2520natural%2520lighting%252C%2520spice%2520ingredient%2520display%252C%2520food%2520photography%2520with%2520rich%2520earthy%2520colors&width=300&height=300&seq=ing3&orientation=squarish" alt="Whole Spices" class="w-full h-full object-cover">
+</div>
+<h3 class="handwritten text-xl font-bold text-gray-800 mb-2">Whole Spices</h3>
+<p class="text-gray-600">Hand-selected and sun-dried spices that are ground fresh for each batch, preserving their essential oils and aromas.</p>
+</div>
+<!-- Ingredient 4 -->
+<div class="text-center">
+<div class="mb-4 mx-auto w-40 h-40 rounded-full overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=traditional%2520wooden%2520pressed%2520cold%2520mustard%2520oil%2520in%2520small%2520earthen%2520container%252C%2520golden%2520yellow%2520color%252C%2520close-up%2520detailed%2520view%252C%2520natural%2520lighting%252C%2520authentic%2520ingredient%2520display%252C%2520food%2520photography%2520with%2520rich%2520warm%2520colors&width=300&height=300&seq=ing4&orientation=squarish" alt="Mustard Oil" class="w-full h-full object-cover">
+</div>
+<h3 class="handwritten text-xl font-bold text-gray-800 mb-2">Cold-Pressed Oils</h3>
+<p class="text-gray-600">Our pickling oils are cold-pressed in small batches using traditional wooden presses, preserving their nutritional value.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recipe Sharing -->
+<section class="py-16 parchment">
+<div class="container mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="handwritten text-4xl font-bold text-gray-800 mb-3">Traditional Serving Suggestions</h2>
+<p class="text-gray-600 max-w-2xl mx-auto">Discover the authentic ways to enjoy our pickles, passed down through generations.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Recipe 1 -->
+<div class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=traditional%2520South%2520Indian%2520meal%2520with%2520fish%2520pickle%2520served%2520on%2520banana%2520leaf%252C%2520white%2520rice%252C%2520lentil%2520curry%252C%2520vegetable%2520side%2520dishes%252C%2520authentic%2520traditional%2520presentation%252C%2520warm%2520natural%2520lighting%252C%2520overhead%2520view%252C%2520food%2520photography%2520with%2520rich%2520colors&width=600&height=400&seq=recipe1&orientation=landscape" alt="Traditional Rice Meal" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-2">Traditional Rice Meal</h3>
+<p class="text-gray-600 mb-4">The most authentic way to enjoy our fish pickles is with steaming hot rice, a dollop of ghee, and a side of yogurt. This simple combination allows the complex flavors of the pickle to shine.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-yellow-100 text-primary px-3 py-1 rounded-full text-sm">Simple</span>
+<span class="bg-yellow-100 text-primary px-3 py-1 rounded-full text-sm">Traditional</span>
+<span class="bg-yellow-100 text-primary px-3 py-1 rounded-full text-sm">Family Favorite</span>
+</div>
+<button class="text-primary hover:underline flex items-center">
+<span>View Full Recipe</span>
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</div>
+<!-- Recipe 2 -->
+<div class="bg-white bg-opacity-80 rounded-lg shadow-md overflow-hidden">
+<div class="h-64 overflow-hidden">
+<img src="https://readdy.ai/api/search-image?query=rustic%2520fish%2520pickle%2520sandwich%2520with%2520crusty%2520bread%252C%2520fresh%2520herbs%252C%2520and%2520butter%252C%2520cut%2520in%2520half%2520showing%2520layers%252C%2520served%2520on%2520wooden%2520board%2520with%2520small%2520side%2520salad%252C%2520warm%2520natural%2520lighting%252C%2520food%2520photography%2520with%2520rich%2520colors&width=600&height=400&seq=recipe2&orientation=landscape" alt="Artisanal Pickle Sandwich" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6">
+<h3 class="handwritten text-2xl font-bold text-gray-800 mb-2">Artisanal Pickle Sandwich</h3>
+<p class="text-gray-600 mb-4">A contemporary favorite - spread our mackerel or sardine pickle on crusty artisanal bread with a layer of butter, fresh herbs, and thinly sliced cucumber for a delicious lunch option.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-yellow-100 text-primary px-3 py-1 rounded-full text-sm">Modern</span>
+<span class="bg-yellow-100 text-primary px-3 py-1 rounded-full text-sm">Quick</span>
+<span class="bg-yellow-100 text-primary px-3 py-1 rounded-full text-sm">Lunch</span>
+</div>
+<button class="text-primary hover:underline flex items-center">
+<span>View Full Recipe</span>
+<i class="ri-arrow-right-line ml-1"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-12 text-center">
+<button class="bg-primary hover:bg-opacity-90 text-white px-8 py-3 rounded-button whitespace-nowrap">Browse All Recipes</button>
+</div>
+</div>
+</section>
+<!-- Newsletter -->
+<section class="py-16 bg-white">
+<div class="container mx-auto px-4">
+<div class="max-w-3xl mx-auto text-center">
+<div class="relative">
+<img src="https://readdy.ai/api/search-image?query=vintage%2520glass%2520bottle%2520with%2520rolled%2520parchment%2520inside%252C%2520antique%2520message%2520in%2520bottle%2520concept%252C%2520sitting%2520on%2520sand%2520with%2520soft%2520natural%2520lighting%252C%2520nostalgic%2520sepia%2520tones%252C%2520isolated%2520on%2520transparent%2520background&width=200&height=300&seq=bottle1&orientation=portrait" alt="Message Bottle" class="h-24 mx-auto mb-6">
+<h2 class="handwritten text-4xl font-bold text-gray-800 mb-3">Join Our Pickle Society</h2>
+<p class="text-gray-600 mb-8">Subscribe to receive traditional recipes, special offers, and the stories behind our pickle-making heritage.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<input type="email" placeholder="Your email address" class="px-4 py-3 rounded-button border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary flex-grow max-w-md">
+<button class="bg-primary hover:bg-opacity-90 text-white px-6 py-3 rounded-button whitespace-nowrap">Subscribe Now</button>
+</div>
+<p class="text-sm text-gray-500 mt-4">We respect your privacy and will never share your information.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="wood-texture text-[#F5EFE0] pt-16 pb-8">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+<!-- Column 1 -->
+<div>
+<h3 class="font-['Pacifico'] text-2xl mb-4">Rajan Pickles</h3>
+<p class="mb-4 ">Preserving authentic flavors and traditions since 1897. Our family's heritage in every jar.</p>
+<div class="flex space-x-4">
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30">
+<i class="ri-facebook-fill"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30">
+<i class="ri-instagram-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30">
+<i class="ri-pinterest-line"></i>
+</a>
+<a href="#" class="w-8 h-8 flex items-center justify-center bg-white bg-opacity-20 rounded-full hover:bg-opacity-30">
+<i class="ri-youtube-line"></i>
+</a>
+</div>
+</div>
+<!-- Column 2 -->
+<div>
+<h3 class="text-xl font-bold mb-4">Shop</h3>
+<ul class="space-y-2">
+<li><a href="#" class="hover:text-yellow-100 transition">All Products</a></li>
+<li><a href="#" class="hover:text-yellow-100 transition">Fish Varieties</a></li>
+<li><a href="#" class="hover:text-yellow-100 transition">Gift Sets</a></li>
+<li><a href="#" class="hover:text-yellow-100 transition">Specialty Items</a></li>
+<li><a href="#" class="hover:text-yellow-100 transition">Bulk Orders</a></li>
+</ul>
+</div>
+<!-- Column 3 -->
+<div>
+<h3 class="text-xl font-bold mb-4">Information</h3>
+<ul class="space-y-2">
+<li><a href="#" class="hover:text-yellow-200 transition">Our Story</a></li>
+<li><a href="#" class="hover:text-yellow-200 transition">Traditional Process</a></li>
+<li><a href="#" class="hover:text-yellow-200 transition">Recipes & Serving</a></li>
+<li><a href="#" class="hover:text-yellow-200 transition">Sustainability</a></li>
+<li><a href="#" class="hover:text-yellow-200 transition">Blog</a></li>
+</ul>
+</div>
+<!-- Column 4 -->
+<div>
+<h3 class="text-xl font-bold mb-4">Contact Us</h3>
+<ul class="space-y-3">
+<li class="flex items-start">
+<div class="w-5 h-5 flex items-center justify-center mt-1 mr-2">
+<i class="ri-map-pin-line"></i>
+</div>
+<span>43 Coastal Village, Tamil Nadu , India </span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-phone-line"></i>
+</div>
+<span>+91 5362718908</span>
+</li>
+<li class="flex items-center">
+<div class="w-5 h-5 flex items-center justify-center mr-2">
+<i class="ri-mail-line"></i>
+</div>
+<span>info@rajanpickles.com</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-8 border-t border-white border-opacity-20">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-sm text-[#F5EFE0] mb-4 md:mb-0">© 2025 Rajan Pickles. All rights reserved.</p>
+<div class="flex items-center space-x-4">
+<a href="#" class="text-sm hover:text-yellow-100 transition">Privacy Policy</a>
+<a href="#" class="text-sm hover:text-yellow-100 transition">Terms of Service</a>
+<a href="#" class="text-sm hover:text-yellow-100 transition">Shipping Policy</a>
+</div>
+<div class="flex items-center space-x-3 mt-4 md:mt-0">
+<div class="w-8 h-5 flex items-center justify-center">
+<i class="ri-visa-fill text-xl"></i>
+</div>
+<div class="w-8 h-5 flex items-center justify-center">
+<i class="ri-mastercard-fill text-xl"></i>
+</div>
+<div class="w-8 h-5 flex items-center justify-center">
+<i class="ri-paypal-fill text-xl"></i>
+</div>
+<div class="w-8 h-5 flex items-center justify-center">
+<i class="ri-amazon-pay-fill text-xl"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+// Product quantity buttons
+const minusBtns = document.querySelectorAll('.ri-subtract-line').forEach(btn => {
+btn.parentElement.addEventListener('click', function() {
+const input = this.nextElementSibling;
+const value = parseInt(input.value);
+if (value > 1) {
+input.value = value - 1;
+}
+});
+});
+const plusBtns = document.querySelectorAll('.ri-add-line').forEach(btn => {
+btn.parentElement.addEventListener('click', function() {
+const input = this.previousElementSibling;
+const value = parseInt(input.value);
+input.value = value + 1;
+});
+});
+});
+</script>
+</body>
+</html>
